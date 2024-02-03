@@ -109,8 +109,8 @@
       content: "ABOUT";
     }
 
-    &.portfolio-link:after {
-      content: "PORTFOLIO";
+    &.projects-link:after {
+      content: "PROJECTS";
     }
 
     &.contact-link:after {
@@ -195,7 +195,7 @@
   .nav-bar nav a {
     &:first-child:after,
     &.about-link:after,
-    &.portfolio-link:after,
+    &.projects-link:after,
     &.contact-link:after {
       content: none;
     }
