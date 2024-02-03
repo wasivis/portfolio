@@ -4,7 +4,7 @@ import Layout from "./components/Layout"
 import Home from "./components/Home"
 import About from "./components/About"
 import Contact from "./components/Contact"
-import Portfolio from "./components/Portfolio"
+import Projects from "./components/Projects"
 import "./App.scss"
 
 function App() {
@@ -26,11 +26,11 @@ function App() {
   }, [navigate])
 
   return (
-    <Routes>
+    <Routes basename="/portfolio">
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
       </Route>
     </Routes>

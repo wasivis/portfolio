@@ -5,7 +5,7 @@ import portfolioData from "../../data/portfolio.json"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCircleLeft, faCircleRight } from "@fortawesome/free-solid-svg-icons"
 
-const Portfolio = () => {
+const Projects = () => {
   const [currentSlide, setCurrentSlide] = useState(0)
 
   const nextSlide = () => {
@@ -23,7 +23,7 @@ const Portfolio = () => {
   }
   return (
     <>
-      <div className="container portfolio-page">
+      <div className="container projects-page">
         <div className="left-half">
           <div className="before-text">
             <span className="animated-text">&lt;h1&gt;</span>
@@ -32,7 +32,7 @@ const Portfolio = () => {
             <h1 className="page-title">
               <AnimatedLetters
                 letterClass="text-animate"
-                text="Portfolio"
+                text="Projects"
                 delay={3}
               />
             </h1>
@@ -57,8 +57,8 @@ const Portfolio = () => {
                     ? portfolioData.portfolio[currentSlide].cover
                     : "")
                 }
-                className="portfolio-image"
-                alt="portfolio"
+                className="project-image"
+                alt="project"
               />
               <div className="content">
                 <span className="title">
@@ -102,4 +102,4 @@ const Portfolio = () => {
   )
 }
 
-export default Portfolio
+export default Projects
