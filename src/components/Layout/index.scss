@@ -1,0 +1,91 @@
+@keyframes fadeIn1 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.7;
+  }
+}
+
+@keyframes fadeIn2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.page {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .tags {
+    color: #a891ed;
+    font-size: 32px;
+    font-family: "La Belle Aurore", cursive;
+    position: absolute;
+    left: 120px;
+    opacity: 0;
+    animation: fadeIn1 1s ease forwards;
+  }
+
+  .top-html,
+  .bottom-html {
+    margin-left: -15px;
+  }
+
+  .top-body,
+  .bottom-body {
+    animation-delay: 1s;
+    margin-left: 10px;
+  }
+
+  .bottom-tags {
+    position: absolute;
+    bottom: 32px;
+  }
+
+  .top-tags {
+    position: absolute;
+    top: 12px;
+  }
+
+  .top-tags,
+  .bottom-tags {
+    line-height: 32px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    justify-content: center;
+    align-items: center;
+  }
+  .page {
+    .tags {
+      font-size: 24px;
+      left: 0;
+      margin-left: 4px;
+    }
+
+    .top-tags {
+      position: absolute;
+      top: 10%;
+    }
+
+    .top-body,
+    .bottom-body {
+      margin-left: 14px;
+    }
+
+    .top-tags,
+    .bottom-tags {
+      line-height: 22px;
+    }
+  }
+}

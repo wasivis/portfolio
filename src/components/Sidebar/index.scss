@@ -1,0 +1,230 @@
+@keyframes fill {
+  0% {
+    fill-opacity: 0;
+  }
+  100% {
+    fill-opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.nav-bar {
+  background: #262626;
+  width: 80px;
+  height: 100%;
+  position: absolute;
+  z-index: 3;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-bar .logo {
+  display: block;
+
+  img {
+    display: block;
+    margin: 8px auto;
+    width: 100%;
+    height: auto;
+
+    &.sub-logo {
+      width: 80%;
+    }
+  }
+}
+
+.nav-bar nav {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 40%;
+
+  a {
+    font-size: 50px;
+    color: #a891ed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+
+    svg {
+      opacity: 1;
+      transition: all 0.3s ease-in-out;
+      color: #6b6b6b;
+    }
+
+    &:hover {
+      color: #a891ed;
+
+      svg {
+        opacity: 0;
+      }
+
+      &:after {
+        opacity: 1;
+      }
+    }
+
+    &:after,
+    .nav-text {
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0;
+      position: absolute;
+      text-align: center;
+      align-items: center;
+    }
+
+    .nav-text {
+      opacity: 1;
+    }
+
+    &:after {
+      opacity: 0;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &:first-child:after {
+      content: "HOME";
+    }
+
+    &.about-link:after {
+      content: "ABOUT";
+    }
+
+    &.portfolio-link:after {
+      content: "PORTFOLIO";
+    }
+
+    &.contact-link:after {
+      content: "CONTACT";
+    }
+  }
+}
+
+.nav-bar ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  height: 15%;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0 0 16px 0;
+
+  li {
+    a {
+      font-size: 34px;
+      color: #6b6b6b;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        color: #a891ed;
+      }
+    }
+  }
+}
+
+.nav-bar .hamburger-icon,
+.nav-bar .close-icon {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-bar {
+    flex-direction: row;
+    align-items: center;
+    width: fill-available;
+    max-height: 56px;
+    overflow: hidden;
+  }
+
+  .nav-bar nav {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .nav-bar ul {
+    display: none;
+  }
+
+  .nav-bar .logo {
+    height: auto;
+    width: 60px;
+
+    img {
+      &.sub-logo {
+        height: auto;
+        width: 60px;
+      }
+    }
+  }
+
+  .nav-bar nav a {
+    display: flex;
+    font-size: 32px;
+    align-items: center;
+
+    &:after {
+      transition: none;
+      width: auto;
+      font-size: 12px;
+    }
+  }
+
+  .nav-bar nav a .nav-text {
+    font-size: 14px;
+  }
+
+  .nav-bar nav a {
+    &:first-child:after,
+    &.about-link:after,
+    &.portfolio-link:after,
+    &.contact-link:after {
+      content: none;
+    }
+  }
+
+  .nav-bar .hamburger-icon,
+  .nav-bar .close-icon {
+    width: 30px;
+    height: auto;
+    margin-left: 14px;
+    display: block;
+    z-index: 4;
+    color: #fff;
+  }
+
+  .nav-bar .mobile-show,
+  .nav-bar .mobile-closed {
+    transition: opacity 0.1s ease-in-out, visibility 0.1s ease-in-out;
+  }
+
+  .nav-bar .mobile-show {
+    opacity: 1;
+    visibility: visible;
+    animation: backInRight 0.7s ease-in-out;
+  }
+
+  .nav-bar .mobile-closed {
+    animation: backOutRight 0.7s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+  }
+}

@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  z-index: 1;
+  transform-style: preserve-3d;
+}
+
+.container.contact-page,
+.container.about-page,
+.container.portfolio-page,
+.container.home-page {
+  .left-half {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+    margin-left: 10%;
+  }
+
+  .right-half {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+  }
+
+  .text-zone {
+    margin-left: 5%;
+  }
+
+  .home-title,
+  .page-title {
+    font-size: 60px;
+    line-height: 53px;
+    margin: 0;
+    font-family: "Coolvetica";
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 3px;
+  }
+
+  .home-title {
+    color: #eaecec;
+  }
+
+  .page-title {
+    color: #a891ed;
+  }
+
+  .before-text,
+  .after-text {
+    font-family: "La Belle Aurore", cursive;
+    color: #a891ed;
+    font-size: 32px;
+    opacity: 0;
+    animation: fadeIn1 1s ease 2s forwards;
+  }
+
+  h2 {
+    animation: fadeInUp 1s ease 6s forwards;
+    color: #a891ed;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 10px;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+  }
+
+  p {
+    color: #ffffff;
+  }
+
+  h2,
+  p {
+    margin-top: 20px;
+    font-size: 24px;
+    font-family: "Helvetica Neue";
+    opacity: 0;
+  }
+
+  .flat-button {
+    display: inline-block;
+    color: #ffffff;
+    background: #343434;
+    font-size: 14px;
+    font-weight: 450;
+    letter-spacing: 3px;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ffffff;
+    opacity: 0;
+    animation: fadeInUp 1s ease 6s forwards;
+    white-space: nowrap;
+
+    &:hover {
+      background: #ffffff;
+      color: #343434;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .container.home-page,
+  .container.contact-page {
+    .flat-button {
+      margin-bottom: 0;
+    }
+  }
+
+  .container.home-page {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .left-half,
+    .right-half {
+      width: 100%;
+      height: 50%;
+      margin-left: 0;
+    }
+
+    .left-half {
+      display: flex;
+      position: relative;
+      top: 15%;
+    }
+
+    .right-half {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .home-title,
+    .page-title {
+      font-size: 36px;
+      line-height: 36px;
+      letter-spacing: 2px;
+    }
+
+    .before-text,
+    .after-text {
+      font-size: 24px;
+      margin-left: 40px;
+    }
+
+    .text-zone {
+      margin-left: 40px;
+      margin-right: 20px;
+    }
+
+    h2 {
+      font-size: 16px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    .flat-button {
+      font-size: 12px;
+      padding: 5px;
+    }
+  }
+}
