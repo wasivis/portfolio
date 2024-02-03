@@ -4,11 +4,11 @@ import {
   faHtml5,
   faJsSquare,
   faReact,
-} from "@fortawesome/free-brands-svg-icons"
-import AnimatedLetters from "../AnimatedLetters"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import "./index.scss"
-import PythonLogo from "../../assets/images/python-logo.svg"
+} from "@fortawesome/free-brands-svg-icons";
+import AnimatedLetters from "../AnimatedLetters";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "./index.scss";
+import PythonLogo from "../../assets/images/python-logo.svg";
 
 const About = () => {
   return (
@@ -81,7 +81,7 @@ const About = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default About
+export default About;

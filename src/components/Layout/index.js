@@ -1,11 +1,11 @@
-import React from "react"
-import { Outlet, useLocation } from "react-router-dom"
-import Sidebar from "../Sidebar"
-import Tags from "../Tags"
-import "./index.scss"
+import React from "react";
+import { Outlet, useLocation } from "react-router-dom";
+import Sidebar from "../Sidebar";
+import Tags from "../Tags";
+import "./index.scss";
 
 const Layout = () => {
-  const location = useLocation()
+  const location = useLocation();
 
   return (
     <div className="App">
@@ -15,7 +15,7 @@ const Layout = () => {
         <Outlet />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;

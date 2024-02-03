@@ -1,7 +1,7 @@
-import "./index.scss"
+import "./index.scss";
 
 const AnimatedLetters = ({ letterClass, text, delay = 0 }) => {
-  const strArray = text.split("")
+  const strArray = text.split("");
 
   return (
     <span>
@@ -15,7 +15,7 @@ const AnimatedLetters = ({ letterClass, text, delay = 0 }) => {
         </span>
       ))}
     </span>
-  )
-}
+  );
+};
 
-export default AnimatedLetters
+export default AnimatedLetters;

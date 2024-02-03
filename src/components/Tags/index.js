@@ -1,25 +1,25 @@
-import React, { useEffect, useRef } from "react"
-import { useLocation } from "react-router-dom"
-import "./index.scss"
+import React, { useEffect, useRef } from "react";
+import { useLocation } from "react-router-dom";
+import "./index.scss";
 
 const Tags = () => {
-  const topTagsRef = useRef(null)
-  const bottomTagsRef = useRef(null)
-  const location = useLocation()
+  const topTagsRef = useRef(null);
+  const bottomTagsRef = useRef(null);
+  const location = useLocation();
 
   useEffect(() => {
     const animateTags = () => {
-      topTagsRef.current?.classList.add("animate-tags")
-      bottomTagsRef.current?.classList.add("animate-tags")
-    }
+      topTagsRef.current?.classList.add("animate-tags");
+      bottomTagsRef.current?.classList.add("animate-tags");
+    };
 
-    animateTags()
+    animateTags();
 
     return () => {
-      topTagsRef.current?.classList.remove("animate-tags")
-      bottomTagsRef.current?.classList.remove("animate-tags")
-    }
-  }, [location])
+      topTagsRef.current?.classList.remove("animate-tags");
+      bottomTagsRef.current?.classList.remove("animate-tags");
+    };
+  }, [location]);
 
   return (
     <>
@@ -34,7 +34,7 @@ const Tags = () => {
         <span className="tags bottom-html">{"</html>"}</span>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Tags
+export default Tags;

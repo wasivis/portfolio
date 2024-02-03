@@ -1,4 +1,4 @@
-import "./index.scss"
+import "./index.scss";
 
 function Logo() {
   return (
@@ -94,7 +94,7 @@ function Logo() {
         </g>
       </svg>
     </div>
-  )
+  );
 }
 
-export default Logo
+export default Logo;

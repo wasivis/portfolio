@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom"
-import "./index.scss"
-import AnimatedLetters from "../AnimatedLetters"
-import Logo from "./Logo"
+import { Link } from "react-router-dom";
+import "./index.scss";
+import AnimatedLetters from "../AnimatedLetters";
+import Logo from "./Logo";
 
 const Home = () => {
   return (
@@ -59,7 +59,7 @@ const Home = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

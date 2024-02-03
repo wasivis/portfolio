@@ -1,8 +1,8 @@
-import { Link, NavLink, useLocation } from "react-router-dom"
-import "./index.scss"
-import LogoW from "../../assets/images/logo-w.png"
-import LogoSubtitle from "../../assets/images/logo_sub_w.png"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { Link, NavLink, useLocation } from "react-router-dom";
+import "./index.scss";
+import LogoW from "../../assets/images/logo-w.png";
+import LogoSubtitle from "../../assets/images/logo_sub_w.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHome,
   faUser,
@@ -10,21 +10,21 @@ import {
   faSuitcase,
   faBars,
   faTimes,
-} from "@fortawesome/free-solid-svg-icons"
+} from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,
   faInstagram,
   faLinkedin,
-} from "@fortawesome/free-brands-svg-icons"
-import { useState } from "react"
+} from "@fortawesome/free-brands-svg-icons";
+import { useState } from "react";
 
 const Sidebar = () => {
-  const location = useLocation()
-  const [showNav, setShowNav] = useState(false)
+  const location = useLocation();
+  const [showNav, setShowNav] = useState(false);
 
   const handleIconClick = () => {
-    setShowNav((prevShowNav) => !prevShowNav)
-  }
+    setShowNav((prevShowNav) => !prevShowNav);
+  };
 
   return (
     <div className={`nav-bar ${showNav ? "mobile-show" : "mobile-closed"}`}>
@@ -114,7 +114,7 @@ const Sidebar = () => {
         onClick={handleIconClick}
       />
     </div>
-  )
-}
+  );
+};
 
-export default Sidebar
+export default Sidebar;
