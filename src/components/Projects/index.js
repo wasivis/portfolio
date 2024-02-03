@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import AnimatedLetters from "../AnimatedLetters"
 import "./index.scss"
-import portfolioData from "../../data/portfolio.json"
+import projectsData from "../../data/projects.json"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCircleLeft, faCircleRight } from "@fortawesome/free-solid-svg-icons"
 
@@ -10,15 +10,15 @@ const Projects = () => {
 
   const nextSlide = () => {
     setCurrentSlide(
-      (prevSlide) => (prevSlide + 1) % portfolioData.portfolio.length
+      (prevSlide) => (prevSlide + 1) % projectsData.projects.length
     )
   }
 
   const prevSlide = () => {
     setCurrentSlide(
       (prevSlide) =>
-        (prevSlide - 1 + portfolioData.portfolio.length) %
-        portfolioData.portfolio.length
+        (prevSlide - 1 + projectsData.projects.length) %
+        projectsData.projects.length
     )
   }
   return (
@@ -53,8 +53,8 @@ const Projects = () => {
               <img
                 src={
                   process.env.PUBLIC_URL +
-                  (portfolioData.portfolio[currentSlide]
-                    ? portfolioData.portfolio[currentSlide].cover
+                  (projectsData.projects[currentSlide]
+                    ? projectsData.projects[currentSlide].cover
                     : "")
                 }
                 className="project-image"
@@ -62,19 +62,19 @@ const Projects = () => {
               />
               <div className="content">
                 <span className="title">
-                  {portfolioData.portfolio[currentSlide]
-                    ? portfolioData.portfolio[currentSlide].title
+                  {projectsData.projects[currentSlide]
+                    ? projectsData.projects[currentSlide].title
                     : ""}
                 </span>
                 <h4 className="description">
-                  {portfolioData.portfolio[currentSlide]
-                    ? portfolioData.portfolio[currentSlide].description
+                  {projectsData.projects[currentSlide]
+                    ? projectsData.projects[currentSlide].description
                     : ""}
                 </h4>
                 <button
                   className="btn"
                   onClick={() =>
-                    window.open(portfolioData.portfolio[currentSlide].url)
+                    window.open(projectsData.projects[currentSlide].url)
                   }
                 >
                   View
