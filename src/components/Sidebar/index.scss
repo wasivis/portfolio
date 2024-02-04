@@ -150,7 +150,7 @@
   .nav-bar {
     flex-direction: row;
     align-items: center;
-    width: fill-available;
+    width: stretch;
     max-height: 56px;
     overflow: hidden;
   }
@@ -206,6 +206,7 @@
     width: 30px;
     height: auto;
     margin-left: 14px;
+    margin-right: 6px;
     display: block;
     z-index: 4;
     color: #fff;
