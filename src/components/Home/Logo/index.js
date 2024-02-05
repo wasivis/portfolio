@@ -1,4 +1,4 @@
-import "./index.scss";
+import "./index.scss"
 
 function Logo() {
   return (
@@ -6,8 +6,8 @@ function Logo() {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         version="1.1"
-        width="1080"
-        height="793.8"
+        width="500"
+        height="500"
         viewBox="0 0 1080 793.8"
       >
         <g transform="matrix(1,0,0,1,-1.174334140435917,0.595141700404838)">
@@ -94,7 +94,7 @@ function Logo() {
         </g>
       </svg>
     </div>
-  );
+  )
 }
 
-export default Logo;
+export default Logo

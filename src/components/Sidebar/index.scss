@@ -18,13 +18,14 @@
 
 .nav-bar {
   background: #262626;
-  width: 80px;
+  width: 5.5vw;
   height: 100%;
   position: absolute;
   z-index: 3;
   padding: 8px;
   display: flex;
   flex-direction: column;
+  font-family: "Rubik", sans-serif;
   align-items: center;
   justify-content: space-between;
 }
@@ -62,7 +63,6 @@
     flex: 1;
     align-items: center;
     text-decoration: none;
-    transition: all 0.3s ease-in-out;
 
     svg {
       opacity: 1;
@@ -71,8 +71,6 @@
     }
 
     &:hover {
-      color: #a891ed;
-
       svg {
         opacity: 0;
       }
@@ -84,12 +82,14 @@
 
     &:after,
     .nav-text {
-      font-size: 14px;
+      color: #ffffff;
+      font-size: 20px;
       font-weight: 600;
       letter-spacing: 0;
       position: absolute;
       text-align: center;
       align-items: center;
+      transition: all 0.3s ease-in-out;
     }
 
     .nav-text {
@@ -98,7 +98,6 @@
 
     &:after {
       opacity: 0;
-      transition: all 0.3s ease-in-out;
     }
 
     &:first-child:after {
@@ -115,6 +114,16 @@
 
     &.contact-link:after {
       content: "CONTACT";
+    }
+
+    &:hover:after,
+    &:hover .nav-text {
+      color: #ffffff;
+    }
+
+    &.active:after,
+    &.active .nav-text {
+      color: #a891ed;
     }
   }
 }

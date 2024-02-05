@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useEffect, useState, useRef } from "react"
 import AnimatedLetters from "../AnimatedLetters"
 import "./index.scss"
 import projectsData from "../../data/projects.json"
@@ -7,20 +7,31 @@ import { faCircleLeft, faCircleRight } from "@fortawesome/free-solid-svg-icons"
 
 const Projects = () => {
   const [currentSlide, setCurrentSlide] = useState(0)
+  const [animation, setAnimation] = useState("animate__fadeInRight")
+  const imgRef = useRef(null)
 
-  const nextSlide = () => {
-    setCurrentSlide(
-      (prevSlide) => (prevSlide + 1) % projectsData.projects.length
-    )
+  const slideLeft = () => {
+    setAnimation("animate__fadeOutLeft")
+    setTimeout(() => {
+      setCurrentSlide(
+        (prevSlide) => (prevSlide + 1) % projectsData.projects.length
+      )
+      setAnimation("animate__fadeInRight")
+    }, 500)
   }
 
-  const prevSlide = () => {
-    setCurrentSlide(
-      (prevSlide) =>
-        (prevSlide - 1 + projectsData.projects.length) %
-        projectsData.projects.length
-    )
+  const slideRight = () => {
+    setAnimation("animate__fadeOutRight")
+    setTimeout(() => {
+      setCurrentSlide(
+        (prevSlide) =>
+          (prevSlide - 1 + projectsData.projects.length) %
+          projectsData.projects.length
+      )
+      setAnimation("animate__fadeInLeft")
+    }, 500)
   }
+
   return (
     <>
       <div className="container projects-page">
@@ -33,7 +44,7 @@ const Projects = () => {
               <AnimatedLetters
                 letterClass="text-animate"
                 text="Projects"
-                delay={3}
+                delay={2}
               />
             </h1>
             <p>
@@ -51,13 +62,14 @@ const Projects = () => {
           <div className="slideshow-container">
             <div className="image-box">
               <img
+                ref={imgRef}
                 src={
                   process.env.PUBLIC_URL +
                   (projectsData.projects[currentSlide]
                     ? projectsData.projects[currentSlide].cover
                     : "")
                 }
-                className="project-image"
+                className={`project-image animate__animated ${animation}`}
                 alt="project"
               />
               <div className="content">
@@ -84,13 +96,13 @@ const Projects = () => {
             <div className="buttons">
               <FontAwesomeIcon
                 className="arrow-btn left"
-                onClick={prevSlide}
+                onClick={slideLeft}
                 icon={faCircleLeft}
                 color="#4d4d4e"
               />
               <FontAwesomeIcon
                 className="arrow-btn right"
-                onClick={nextSlide}
+                onClick={slideRight}
                 icon={faCircleRight}
                 color="#4d4d4e"
               />

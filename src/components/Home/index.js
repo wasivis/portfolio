@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom";
-import "./index.scss";
-import AnimatedLetters from "../AnimatedLetters";
-import Logo from "./Logo";
+import { Link } from "react-router-dom"
+import "./index.scss"
+import AnimatedLetters from "../AnimatedLetters"
+import Logo from "./Logo"
 
 const Home = () => {
   return (
@@ -16,21 +16,21 @@ const Home = () => {
               <AnimatedLetters
                 letterClass="text-animate"
                 text="hi,"
-                delay={2.5}
+                delay={2}
               />
             </h1>
             <h1 className="home-title">
               <AnimatedLetters
                 letterClass="text-animate"
                 text="i'm wasivis,"
-                delay={2.5 + "hi,".length / 10}
+                delay={2 + "hi,".length / 10}
               />
             </h1>
             <h1 className="home-title">
               <AnimatedLetters
                 letterClass="text-animate"
                 text="full stack"
-                delay={2.5 + "hi,".length / 10 + "i'm wasivis,".length / 10}
+                delay={2 + "hi,".length / 10 + "i'm wasivis,".length / 10}
               />
             </h1>
             <h1 className="home-title">
@@ -38,7 +38,7 @@ const Home = () => {
                 letterClass="text-animate"
                 text="developer."
                 delay={
-                  2.5 +
+                  2 +
                   "hi,".length / 10 +
                   "i'm wasivis,".length / 10 +
                   "full stack".length / 10
@@ -46,7 +46,7 @@ const Home = () => {
               />
             </h1>
             <h2>JavaScript Expert / Freelancer</h2>
-            <Link to="/contact" className="flat-button">
+            <Link to="/contact" className="flat-button contact-button">
               CONTACT ME
             </Link>
           </div>
@@ -59,7 +59,7 @@ const Home = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

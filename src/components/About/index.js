@@ -1,14 +1,15 @@
+import { useEffect, useState } from "react"
 import {
   faNodeJs,
   faCss3,
   faHtml5,
   faJsSquare,
   faReact,
-} from "@fortawesome/free-brands-svg-icons";
-import AnimatedLetters from "../AnimatedLetters";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "./index.scss";
-import PythonLogo from "../../assets/images/python-logo.svg";
+} from "@fortawesome/free-brands-svg-icons"
+import AnimatedLetters from "../AnimatedLetters"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import "./index.scss"
+import PythonLogo from "../../assets/images/python-logo.svg"
 
 const About = () => {
   return (
@@ -23,32 +24,26 @@ const About = () => {
               <AnimatedLetters
                 letterClass="text-animate"
                 text="About me"
-                delay={3}
+                delay={2}
               />
             </h1>
             <p>
-              As a Full Stack Developer, I am passionate about creating and
-              developing web applications that are both functional and visually
-              appealing.
+              As a Full Stack Developer, I love creating and developing visually
+              pleasing, functional web applications.
             </p>
             <p>
-              My background in front-end development includes expertise in HTML,
-              CSS, JavaScript, and libraries like React (this website was made
-              using it!). On the back-end, I am proficient in NodeJS, Python,
-              and databases like MySQL.
+              I'm skilled in front-end technologies like HTML, CSS, JavaScript,
+              and React, and back-end tools like NodeJS, Python, and MySQL.
             </p>
             <p>
-              In addition to my technical skills, I'm always willing to go the
-              extra mile to ensure projects are completed on time and to the
-              highest standard. I'm always looking to expand my knowledge and
-              skills in the field (I'm currently excited about diving deeper
-              into videogame development!).
+              I'm dedicated to delivering high-standard projects on time and I'm
+              always looking to enhance my skills (I'm currently excited about
+              diving deeper into videogame development!).
             </p>
             <p>
               Outside of coding, I enjoy videogames, movies and TTRPG's. I
-              believe my hobbies also enhance my work as a developer because
-              they expose me to a wide range of user interfaces and mechanics,
-              which can inspire creativity and innovation in my own projects!
+              believe my hobbies also enhance my work as a developer, inspiring
+              creativity and innovation in my own projects!
             </p>
           </div>
           <div className="after-text">
@@ -81,7 +76,7 @@ const About = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default About;
+export default About

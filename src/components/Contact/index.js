@@ -1,15 +1,15 @@
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import L from "leaflet";
-import { useRef } from "react";
-import emailjs from "@emailjs/browser";
-import AnimatedLetters from "../AnimatedLetters";
-import "./index.scss";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet"
+import L from "leaflet"
+import { useRef } from "react"
+import emailjs from "@emailjs/browser"
+import AnimatedLetters from "../AnimatedLetters"
+import "./index.scss"
 
 const Contact = () => {
-  const form = useRef();
+  const form = useRef()
 
   const sendEmail = (e) => {
-    e.preventDefault();
+    e.preventDefault()
 
     emailjs
       .sendForm(
@@ -20,14 +20,14 @@ const Contact = () => {
       )
       .then(
         () => {
-          alert("Message successfully sent!");
-          window.location.reload(false);
+          alert("Message successfully sent!")
+          window.location.reload(false)
         },
         () => {
-          alert("Failed to send the message, please try again");
+          alert("Failed to send the message, please try again")
         }
-      );
-  };
+      )
+  }
 
   const myIcon = new L.Icon({
     iconUrl: require("../../assets/images/icon-map.png"),
@@ -39,7 +39,7 @@ const Contact = () => {
     shadowAnchor: null,
     iconSize: [128, 128],
     className: "leaflet-div-icon",
-  });
+  })
 
   return (
     <>
@@ -53,7 +53,7 @@ const Contact = () => {
               <AnimatedLetters
                 letterClass="text-animate"
                 text="Contact"
-                delay={3}
+                delay={2}
               />
             </h1>
             <p>
@@ -96,7 +96,11 @@ const Contact = () => {
                     ></textarea>
                   </li>
                   <li>
-                    <input type="submit" className="flat-button" value="SEND" />
+                    <input
+                      type="submit"
+                      className="flat-button send-button"
+                      value="SEND"
+                    />
                   </li>
                 </ul>
               </form>
@@ -130,7 +134,7 @@ const Contact = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Contact;
+export default Contact

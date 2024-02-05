@@ -32,22 +32,18 @@
     left: 120px;
     opacity: 0;
     animation: fadeIn1 1s ease forwards;
-  }
-
-  .top-html,
-  .bottom-html {
-    margin-left: -15px;
+    margin-left: 0.5vw;
   }
 
   .top-body,
   .bottom-body {
     animation-delay: 1s;
-    margin-left: 10px;
+    margin-left: 1.5vw;
   }
 
   .bottom-tags {
     position: absolute;
-    bottom: 32px;
+    bottom: 3%;
   }
 
   .top-tags {
@@ -61,7 +57,7 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-device-height: 899px) {
   .container {
     justify-content: center;
     align-items: center;
@@ -74,8 +70,41 @@
     }
 
     .top-tags {
-      position: absolute;
-      top: 10%;
+      position: relative;
+      top: 12%;
+    }
+
+    .top-body,
+    .bottom-body {
+      margin-left: 14px;
+    }
+
+    .top-tags,
+    .bottom-tags {
+      line-height: 22px;
+    }
+  }
+}
+
+@media screen and (min-device-height: 900px) and (max-device-height: 1024px) {
+  .container {
+    justify-content: center;
+    align-items: center;
+  }
+  .page {
+    .tags {
+      font-size: 24px;
+      left: 0;
+      margin-left: 4px;
+    }
+
+    .top-tags {
+      position: relative;
+      top: 9%;
+    }
+
+    .bottom-tags {
+      bottom: 2%;
     }
 
     .top-body,
