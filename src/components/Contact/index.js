@@ -68,7 +68,7 @@ const Contact = () => {
                     <input
                       placeholder="Name"
                       type="text"
-                      name="name"
+                      name="user_name"
                       required
                     />
                   </li>
@@ -76,7 +76,7 @@ const Contact = () => {
                     <input
                       placeholder="Email"
                       type="email"
-                      name="email"
+                      name="user_email"
                       required
                     />
                   </li>
