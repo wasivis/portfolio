@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react"
+import React, { useState, useRef } from "react"
 import AnimatedLetters from "../AnimatedLetters"
 import "./index.scss"
 import projectsData from "../../data/projects.json"
