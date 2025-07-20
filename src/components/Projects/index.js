@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React, { useState } from "react"
 import AnimatedLetters from "../AnimatedLetters"
 import "./index.scss"
 import portfolioData from "../../data/portfolio.json"

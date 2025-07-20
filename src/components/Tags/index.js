@@ -8,16 +8,15 @@ const Tags = () => {
   const location = useLocation()
 
   useEffect(() => {
-    const animateTags = () => {
-      topTagsRef.current?.classList.add("animate-tags")
-      bottomTagsRef.current?.classList.add("animate-tags")
-    }
+    const top = topTagsRef.current
+    const bottom = bottomTagsRef.current
 
-    animateTags()
+    top?.classList.add("animate-tags")
+    bottom?.classList.add("animate-tags")
 
     return () => {
-      topTagsRef.current?.classList.remove("animate-tags")
-      bottomTagsRef.current?.classList.remove("animate-tags")
+      top?.classList.remove("animate-tags")
+      bottom?.classList.remove("animate-tags")
     }
   }, [location])
 

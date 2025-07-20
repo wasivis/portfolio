@@ -150,7 +150,7 @@
   .nav-bar {
     flex-direction: row;
     align-items: center;
-    width: fill-available;
+    width: stretch;
     max-height: 56px;
     overflow: hidden;
   }
@@ -213,7 +213,9 @@
 
   .nav-bar .mobile-show,
   .nav-bar .mobile-closed {
-    transition: opacity 0.1s ease-in-out, visibility 0.1s ease-in-out;
+    transition:
+      opacity 0.1s ease-in-out,
+      visibility 0.1s ease-in-out;
   }
 
   .nav-bar .mobile-show {
