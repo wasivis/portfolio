@@ -1,4 +1,4 @@
-import { Routes, Route, useNavigate } from "react-router-dom"
+import { Routes, Route, useLocation } from "react-router-dom"
 import React, { useEffect } from "react"
 import Layout from "./components/Layout"
 import Home from "./components/Home"
@@ -8,22 +8,16 @@ import Projects from "./components/Projects"
 import "./App.scss"
 
 function App() {
-  const navigate = useNavigate()
+  const location = useLocation()
 
   useEffect(() => {
-    const handleRouteChange = () => {
-      const sidebar = document.getElementById("sidebar")
-      sidebar &&
-        typeof sidebar.setShowNav === "function" &&
-        sidebar.setShowNav(false)
+    // On location change attempt to close mobile sidebar if it exposes setShowNav
+    const sidebar = document.getElementById("sidebar")
+    if (sidebar && typeof sidebar.setShowNav === "function") {
+      sidebar.setShowNav(false)
     }
-
-    const unlisten = navigate(handleRouteChange)
-
-    return () => {
-      typeof unlisten === "function" && unlisten()
-    }
-  }, [navigate])
+    // run every time location changes
+  }, [location.pathname])
 
   return (
     <Routes basename="/portfolio">
