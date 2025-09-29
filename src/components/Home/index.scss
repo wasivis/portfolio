@@ -40,7 +40,7 @@ body {
 
   .home-title,
   .page-title {
-    font-size: 60px;
+    font-size: 40px;
     line-height: 53px;
     margin: 0;
     font-family: "Coolvetica";
@@ -57,14 +57,7 @@ body {
     color: #a891ed;
   }
 
-  .before-text,
-  .after-text {
-    font-family: "La Belle Aurore", cursive;
-    color: #a891ed;
-    font-size: 32px;
-    opacity: 0;
-    animation: fadeIn1 1s ease 2s forwards;
-  }
+  // removed .before-text and .after-text (no longer used)
 
   h2 {
     animation: fadeInUp 1s ease 6s forwards;
@@ -150,11 +143,7 @@ body {
       letter-spacing: 2px;
     }
 
-    .before-text,
-    .after-text {
-      font-size: 24px;
-      margin-left: 40px;
-    }
+  // removed .before-text and .after-text (no longer used)
 
     .text-zone {
       margin-left: 40px;

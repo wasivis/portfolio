@@ -15,44 +15,23 @@ const About = () => {
     <>
       <div className="container about-page">
         <div className="left-half">
-          <div className="before-text">
-            <span>&lt;h1&gt;</span>
-          </div>
           <div className="text-zone">
             <h1 className="page-title">
               <AnimatedLetters
                 letterClass="text-animate"
                 text="About me"
-                delay={3}
+                delay={2}
               />
             </h1>
             <p>
-              As a Full Stack Developer, I am passionate about creating and
-              developing web applications that are both functional and visually
-              appealing.
+              I'm a Full Stack Developer passionate about building web applications that are both functional and visually engaging. My front-end experience includes HTML, CSS, JavaScript, and React (this site runs on it!). On the back-end, I work with NodeJS, Python, MongoDB, and MySQL.
             </p>
             <p>
-              My background in front-end development includes expertise in HTML,
-              CSS, JavaScript, and libraries like React (this website was made
-              using it!). On the back-end, I am proficient in NodeJS, Python,
-              and databases like MySQL.
+              I'm committed to delivering high-quality projects and constantly expanding my skills (I'm currently diving into videogame development!)
             </p>
             <p>
-              In addition to my technical skills, I'm always willing to go the
-              extra mile to ensure projects are completed on time and to the
-              highest standard. I'm always looking to expand my knowledge and
-              skills in the field (I'm currently excited about diving deeper
-              into videogame development!).
+              Outside of coding, I enjoy videogames, movies, and TTRPGs, which fuel my creativity and expose me to diverse interfaces and mechanics.
             </p>
-            <p>
-              Outside of coding, I enjoy videogames, movies and TTRPG's. I
-              believe my hobbies also enhance my work as a developer because
-              they expose me to a wide range of user interfaces and mechanics,
-              which can inspire creativity and innovation in my own projects!
-            </p>
-          </div>
-          <div className="after-text">
-            <span>&lt;/h1&gt;</span>
           </div>
         </div>
         <div className="right-half">

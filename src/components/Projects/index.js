@@ -25,15 +25,12 @@ const Projects = () => {
     <>
       <div className="container projects-page">
         <div className="left-half">
-          <div className="before-text">
-            <span className="animated-text">&lt;h1&gt;</span>
-          </div>
           <div className="text-zone">
             <h1 className="page-title">
               <AnimatedLetters
                 letterClass="text-animate"
                 text="Projects"
-                delay={3}
+                delay={2}
               />
             </h1>
             <p>
@@ -42,9 +39,6 @@ const Projects = () => {
               Feel free to explore and I hope you appreciate the work as much as
               I enjoyed creating them!
             </p>
-          </div>
-          <div className="after-text">
-            <span className="animated-text">&lt;/h1&gt;</span>
           </div>
         </div>
         <div className="right-half">

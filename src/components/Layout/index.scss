@@ -25,10 +25,10 @@
   justify-content: space-between;
 
   .tags {
-    color: #a891ed;
-    font-size: 32px;
-    font-family: "La Belle Aurore", cursive;
-    position: absolute;
+  color: #a891ed;
+  font-size: 32px;
+  font-family: "La Belle Aurore", cursive;
+  position: fixed;
     left: 120px;
     opacity: 0;
     animation: fadeIn1 1s ease forwards;

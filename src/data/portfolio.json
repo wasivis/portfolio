@@ -1,27 +1,40 @@
 {
     "portfolio": [
         {
-            "cover": "/pokedex/pokedex.png",
+            "cover": "/portfolio/yournextgame/yournextgame.png",
+            "title": "Your Next Game",
+            "description": "React | JavaScript | HTML | CSS",
+            "url": "https://yournextgame.netlify.app"
+        },
+        {
+            "cover": "/portfolio/drinkme/drinkme.png",
+            "title": "DrinkMe",
+            "description": "Electron | JavaScript",
+            "url": "https://github.com/wasivis/DrinkMe"
+        },
+        {
+            "cover": "/portfolio/pokedex/pokedex.png",
             "title": "Pokedex",
             "description": "React | JavaScript | HTML | CSS",
             "url": "https://wasivispokedex.netlify.app"
         },
         {
-            "cover": "/randomquotegenerator/randomquotegenerator.png",
+            "cover": "/portfolio/randomquotegenerator/randomquotegenerator.png",
             "title": "Random Quote Generator",
             "description": "JavaScript | HTML | CSS",
             "url": "https://wasivis.github.io/randomquotegenerator/"
         },
         {
-            "cover": "/paper-calculator/paper-calculator.png",
+            "cover": "/portfolio/paper-calculator/paper-calculator.png",
             "title": "Paper Calculator",
             "description": "JavaScript | HTML | CSS",
             "url": "https://wasivis.github.io/calculator/"
         },
         {
-            "cover": "/etchasketch/etchasketch.png",
+            "cover": "/portfolio/etchasketch/etchasketch.png",
             "title": "Etch A Sketch",
             "description": "JavaScript | HTML | CSS",
             "url": "https://wasivis.github.io/etchasketch/"
-        }]
+        }
+    ]
 }

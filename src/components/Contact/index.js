@@ -45,15 +45,12 @@ const Contact = () => {
     <>
       <div className="container contact-page">
         <div className="left-half">
-          <div className="before-text">
-            <span className="animated-text">&lt;h1&gt;</span>
-          </div>
           <div className="text-zone">
             <h1 className="page-title">
               <AnimatedLetters
                 letterClass="text-animate"
                 text="Contact"
-                delay={3}
+                delay={2}
               />
             </h1>
             <p>
@@ -101,9 +98,6 @@ const Contact = () => {
                 </ul>
               </form>
             </div>
-          </div>
-          <div className="after-text">
-            <span className="animated-text">&lt;h1/&gt;</span>
           </div>
         </div>
         <div className="info-map">

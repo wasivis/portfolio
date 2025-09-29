@@ -8,9 +8,6 @@ const Home = () => {
     <>
       <div className="container home-page">
         <div className="left-half">
-          <div className="before-text">
-            <span>&lt;h1&gt;</span>
-          </div>
           <div className="text-zone">
             <h1 className="home-title">
               <AnimatedLetters
@@ -49,9 +46,6 @@ const Home = () => {
             <Link to="/contact" className="flat-button">
               CONTACT ME
             </Link>
-          </div>
-          <div className="after-text">
-            <span>&lt;/h1&gt;</span>
           </div>
         </div>
         <div className="right-half">

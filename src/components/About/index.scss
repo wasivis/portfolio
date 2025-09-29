@@ -1,6 +1,9 @@
 .container.about-page {
   .left-half {
     width: 60%;
+    .text-zone p {
+      font-size: 18px;
+    }
   }
 }
 
@@ -159,11 +162,7 @@ p {
       letter-spacing: 2px;
     }
 
-    .before-text,
-    .after-text {
-      font-size: 24px;
-      margin-left: 40px;
-    }
+    // removed .before-text and .after-text (no longer used)
 
     .text-zone {
       margin-left: 20px;
