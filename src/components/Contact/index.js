@@ -100,15 +100,6 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="info-map">
-          Iván Montequín
-          <br />
-          Capital Federal,
-          <br />
-          Argentina.
-          <br />
-          <span>ivanmontequin@gmail.com</span>
-        </div>
         <div className="map-wrap">
           <MapContainer center={[-34.6022258, -58.4325352]} zoom={16}>
             <TileLayer

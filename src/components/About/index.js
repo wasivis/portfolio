@@ -4,11 +4,11 @@ import {
   faHtml5,
   faJsSquare,
   faReact,
+  faPython
 } from "@fortawesome/free-brands-svg-icons"
 import AnimatedLetters from "../AnimatedLetters"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import "./index.scss"
-import PythonLogo from "../../assets/images/python-logo.svg"
 
 const About = () => {
   return (
@@ -53,7 +53,7 @@ const About = () => {
                 <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
               </div>
               <div className="cube-face face6">
-                <img src={PythonLogo} alt="logo" />
+                <FontAwesomeIcon icon={faPython} color="#FFD43B" />
               </div>
             </div>
           </div>

@@ -96,29 +96,6 @@
   animation-fill-mode: forwards;
 }
 
-.info-map {
-  position: absolute;
-  background: #2b2b2b;
-  top: 50px;
-  right: 26%;
-  z-index: 999999;
-  width: 240px;
-  padding: 20px;
-  color: #ffffff;
-  font-family: "Helvetica";
-  font-size: 18px;
-  font-weight: 500;
-  opacity: 0;
-  animation: fadeIn 1s 4s;
-  animation-fill-mode: forwards;
-
-  span {
-    color: #a891ed;
-    display: block;
-    padding-top: 20px;
-  }
-}
-
 .leaflet-popup-content {
   margin: 12px 10px 10px 10px;
 }

@@ -10,10 +10,10 @@ import {
   faSuitcase,
   faBars,
   faTimes,
+  faMugHot
 } from "@fortawesome/free-solid-svg-icons"
 import {
   faGithub,
-  faInstagram,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons"
 import { useState } from "react"
@@ -59,7 +59,7 @@ const Sidebar = () => {
           to="/projects"
         >
           {location.pathname === "/projects" ? (
-            <span className="nav-text">PORTFOLIO</span>
+            <span className="nav-text">PROJECTS</span>
           ) : (
             <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />
           )}
@@ -100,9 +100,9 @@ const Sidebar = () => {
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://www.instagram.com/wasivis"
+            href="https://ko-fi.com/wasivis"
           >
-            <FontAwesomeIcon icon={faInstagram} />
+            <FontAwesomeIcon icon={faMugHot} />
           </a>
         </li>
       </ul>
