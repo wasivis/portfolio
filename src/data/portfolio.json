@@ -1,25 +1,25 @@
 {
     "portfolio": [
         {
-            "cover": "/portfolio/pokedex/pokedex.png",
+            "cover": "/pokedex/pokedex.png",
             "title": "Pokedex",
             "description": "React | JavaScript | HTML | CSS",
             "url": "https://wasivispokedex.netlify.app"
         },
         {
-            "cover": "/portfolio/randomquotegenerator/randomquotegenerator.png",
+            "cover": "/randomquotegenerator/randomquotegenerator.png",
             "title": "Random Quote Generator",
             "description": "JavaScript | HTML | CSS",
             "url": "https://wasivis.github.io/randomquotegenerator/"
         },
         {
-            "cover": "/portfolio/paper-calculator/paper-calculator.png",
+            "cover": "/paper-calculator/paper-calculator.png",
             "title": "Paper Calculator",
             "description": "JavaScript | HTML | CSS",
             "url": "https://wasivis.github.io/calculator/"
         },
         {
-            "cover": "/portfolio/etchasketch/etchasketch.png",
+            "cover": "/etchasketch/etchasketch.png",
             "title": "Etch A Sketch",
             "description": "JavaScript | HTML | CSS",
             "url": "https://wasivis.github.io/etchasketch/"
