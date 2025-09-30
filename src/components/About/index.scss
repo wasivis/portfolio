@@ -3,8 +3,8 @@
   .left-half {
     width: 60%;
     .text-zone p {
-      /* reduced from 18px -> 12px (~33% smaller) for improved compactness */
-      font-size: 12px;
+      /* increase main viewport paragraph size for improved readability */
+      font-size: 18px;
     }
   }
 }
