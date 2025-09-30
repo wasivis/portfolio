@@ -89,3 +89,19 @@
     }
   }
 }
+
+/* Tight small-screen tweaks (<=360px) */
+@media (max-width: 360px) {
+  .page {
+    .tags {
+      font-size: 18px;
+      left: 6px;
+      margin-left: 2px;
+      opacity: 1; /* keep tags visible but smaller */
+    }
+
+    .top-tags { top: 6%; }
+    .bottom-tags { bottom: 16px; }
+    .top-tags, .bottom-tags { line-height: 18px; }
+  }
+}

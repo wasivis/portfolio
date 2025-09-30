@@ -7,19 +7,33 @@ import { faCircleLeft, faCircleRight } from "@fortawesome/free-solid-svg-icons"
 
 const Projects = () => {
   const [currentSlide, setCurrentSlide] = useState(0)
+  const [animClass, setAnimClass] = useState("")
+  const ANIM_DURATION = 400 // ms, keep in sync with CSS
 
   const nextSlide = () => {
-    setCurrentSlide(
-      (prevSlide) => (prevSlide + 1) % portfolioData.portfolio.length
-    )
+    if (animClass) return // ignore clicks while animating
+    setAnimClass("slide-out-left")
+    setTimeout(() => {
+      setCurrentSlide(
+        (prevSlide) => (prevSlide + 1) % portfolioData.portfolio.length
+      )
+      setAnimClass("slide-in-right")
+      setTimeout(() => setAnimClass(""), ANIM_DURATION)
+    }, ANIM_DURATION)
   }
 
   const prevSlide = () => {
-    setCurrentSlide(
-      (prevSlide) =>
-        (prevSlide - 1 + portfolioData.portfolio.length) %
-        portfolioData.portfolio.length
-    )
+    if (animClass) return
+    setAnimClass("slide-out-right")
+    setTimeout(() => {
+      setCurrentSlide(
+        (prevSlide) =>
+          (prevSlide - 1 + portfolioData.portfolio.length) %
+          portfolioData.portfolio.length
+      )
+      setAnimClass("slide-in-left")
+      setTimeout(() => setAnimClass(""), ANIM_DURATION)
+    }, ANIM_DURATION)
   }
   return (
     <>
@@ -43,7 +57,7 @@ const Projects = () => {
         </div>
         <div className="right-half">
           <div className="slideshow-container">
-            <div className="image-box">
+            <div className={`image-box ${animClass}`}>
               <img
                 src={
                   process.env.PUBLIC_URL +

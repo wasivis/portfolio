@@ -1,8 +1,10 @@
+/* Very small devices adjustments */
 .container.about-page {
   .left-half {
     width: 60%;
     .text-zone p {
-      font-size: 18px;
+      /* reduced from 18px -> 12px (~33% smaller) for improved compactness */
+      font-size: 12px;
     }
   }
 }
@@ -109,7 +111,10 @@ p {
     .left-half {
       display: flex;
       position: relative;
-      top: 13%;
+      /* remove large percent top offset that caused a big gap on smaller viewports */
+      top: 0;
+      /* use a small margin to keep a little breathing room without pushing content down */
+      margin-top: 12px;
     }
 
     .right-half {
@@ -118,7 +123,9 @@ p {
       align-items: center;
       position: relative;
       height: 30%;
-      top: 15%;
+      /* remove percent top offset and use a modest margin instead */
+      top: 0;
+      margin-top: 8px;
     }
 
     .cube-container {
@@ -170,7 +177,61 @@ p {
     }
 
     p {
-      font-size: 12.5px;
+      /* make tablet paragraphs smaller than before (was 12.5px) */
+      font-size: 11px;
     }
+  }
+}
+
+/* Very small devices adjustments */
+@media (max-width: 360px) {
+  .container.about-page {
+    .left-half,
+    .right-half {
+      width: 100%;
+      height: auto;
+      margin-left: 8px;
+    }
+
+    .page-title {
+      font-size: 18px;
+      line-height: 22px;
+    }
+
+    /* much smaller cube for tiny screens (use 100px for narrow devices like 320x640) */
+    .cube-container {
+      width: 100px;
+      height: 100px;
+      margin: 36px auto 0 auto;
+    }
+
+    .cubespinner {
+      width: 100%;
+      height: 100%;
+    }
+
+    .cube-face {
+      font-size: 22px;
+      width: inherit;
+      height: inherit;
+    }
+
+    /* use fixed translation distances so the cube faces don't push the layout */
+    .face1 { transform: translate3d(0, 0, 48px); }
+    .face2 { transform: rotateY(180deg) translate3d(0, 0, 48px); }
+    .face3 { transform: rotateY(-90deg) translate3d(0, 0, 48px); }
+    .face4 { transform: rotateY(90deg) translate3d(0, 0, 48px); }
+    .face5 { transform: rotateX(90deg) translate3d(0, 0, 48px); }
+    .face6 { transform: rotateX(-90deg) translate3d(0, 0, 48px); }
+
+    .face6 img { width: 48px; height: auto; }
+
+    .text-zone { margin-left: 10px; margin-right: 10px; }
+      /* ensure the text block has some bottom spacing so the cube isn't overlapped */
+      .text-zone {
+        margin-bottom: 12px;
+      }
+    /* very small devices: reduce main text further for compact layout */
+    p { font-size: 9px; }
   }
 }

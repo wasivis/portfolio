@@ -164,3 +164,35 @@ body {
     }
   }
 }
+
+/* Tighten layout for very small devices (phones ~320px wide) */
+@media (max-width: 360px) {
+  .container.home-page {
+    .left-half {
+      margin-left: 8px;
+      top: 8%;
+    }
+
+    .home-title,
+    .page-title {
+      font-size: 22px;
+      line-height: 26px;
+      letter-spacing: 1px;
+    }
+
+    .text-zone {
+      margin-left: 12px;
+      margin-right: 12px;
+    }
+
+    h2,
+    p {
+      font-size: 14px;
+    }
+
+    .flat-button {
+      font-size: 11px;
+      padding: 6px;
+    }
+  }
+}
