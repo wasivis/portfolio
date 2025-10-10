@@ -1,37 +1,37 @@
 {
     "portfolio": [
         {
-            "cover": "/portfolio/platformertemplate/platformertemplate.png",
+            "cover": "/projects/platformertemplate/platformertemplate.png",
             "title": "2D Platformer Template for Godot",
             "description": "GDScript",
             "url": "https://wasivis.itch.io/platformerstarterkit"
         },
         {
-            "cover": "/portfolio/interactsystemforgodot/interactsystemforgodot.gif",
+            "cover": "/projects/interactsystemforgodot/interactsystemforgodot.gif",
             "title": "2D Interact System for Godot",
             "description": "GDScript",
             "url": "https://wasivis.itch.io/simple-2d-interaction-system-for-godot"
         },
         {
-            "cover": "/portfolio/24iconpixelart/24iconpixelart.png",
+            "cover": "/projects/24iconpixelart/24iconpixelart.png",
             "title": "24-Icon Pixel Art Starter Pack",
             "description": "Aseprite",
             "url": "https://wasivis.itch.io/24-icon-pixel-art-starter-pack"
         },
         {
-            "cover": "/portfolio/yournextgame/yournextgame.png",
+            "cover": "/projects/yournextgame/yournextgame.png",
             "title": "Your Next Game",
             "description": "React | JavaScript | HTML | CSS",
             "url": "https://yournextgame.netlify.app"
         },
         {
-            "cover": "/portfolio/drinkme/drinkme.png",
+            "cover": "/projects/drinkme/drinkme.png",
             "title": "DrinkMe",
             "description": "Electron | JavaScript",
             "url": "https://github.com/wasivis/DrinkMe"
         },
         {
-            "cover": "/portfolio/pokedex/pokedex.png",
+            "cover": "/projects/pokedex/pokedex.png",
             "title": "Pokedex",
             "description": "React | JavaScript | HTML | CSS",
             "url": "https://wasivispokedex.netlify.app"
