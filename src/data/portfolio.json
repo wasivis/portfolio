@@ -6,19 +6,6 @@
             "description": "React | JavaScript | HTML | CSS",
             "url": "https://yournextgame.netlify.app"
         },
-                {
-            "cover": "/projects/interactsystemforgodot/interactsystemforgodot.gif",
-            "title": "2D Interact System for Godot",
-            "description": "GDScript",
-            "url": "https://wasivis.itch.io/simple-2d-interaction-system-for-godot"
-        },
-        {
-            "cover": "/projects/platformertemplate/platformertemplate.png",
-            "title": "2D Platformer Template for Godot",
-            "description": "GDScript",
-            "url": "https://wasivis.itch.io/platformerstarterkit"
-        },
-
         {
             "cover": "/projects/drinkme/drinkme.png",
             "title": "DrinkMe",
@@ -30,6 +17,12 @@
             "title": "Pokedex",
             "description": "React | JavaScript | HTML | CSS",
             "url": "https://wasivispokedex.netlify.app"
+        },
+        {
+            "cover": "/projects/interactsystemforgodot/interactsystemforgodot.gif",
+            "title": "2D Interact System for Godot",
+            "description": "GDScript",
+            "url": "https://wasivis.itch.io/simple-2d-interaction-system-for-godot"
         }
     ]
 }
