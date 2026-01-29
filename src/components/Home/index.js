@@ -42,7 +42,7 @@ const Home = () => {
                 }
               />
             </h1>
-            <h2>JavaScript Expert / Freelancer</h2>
+            <h2>React / Trypescript Specialist</h2>
             <Link to="/contact" className="flat-button">
               CONTACT ME
             </Link>

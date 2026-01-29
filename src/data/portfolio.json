@@ -1,10 +1,22 @@
 {
     "portfolio": [
                 {
+            "cover": "/projects/gamescout-ai/gamescout-ai.png",
+            "title": "GameScout AI",
+            "description": "React | TypeScript | Tailwind CSS",
+            "url": "https://gamescout-ai.vercel.app"
+        },
+                {
             "cover": "/projects/yournextgame/yournextgame.png",
             "title": "Your Next Game",
-            "description": "React | JavaScript | HTML | CSS",
+            "description": "React | JavaScript | CSS",
             "url": "https://yournextgame.netlify.app"
+        },
+                {
+            "cover": "/projects/argencalc/argencalc.png",
+            "title": "ArgenCalc",
+            "description": "React | JavaScript | CSS",
+            "url": "https://argencalc.vercel.app"
         },
         {
             "cover": "/projects/drinkme/drinkme.png",
@@ -15,7 +27,7 @@
         {
             "cover": "/projects/pokedex/pokedex.png",
             "title": "Pokedex",
-            "description": "React | JavaScript | HTML | CSS",
+            "description": "React | JavaScript | CSS",
             "url": "https://wasivispokedex.netlify.app"
         },
         {
