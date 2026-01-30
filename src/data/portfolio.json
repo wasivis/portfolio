@@ -1,40 +1,46 @@
 {
-    "portfolio": [
-                {
-            "cover": "/projects/gamescout-ai/gamescout-ai.png",
-            "title": "GameScout AI",
-            "description": "React | TypeScript | Tailwind CSS",
-            "url": "https://gamescout-ai.vercel.app"
-        },
-                {
-            "cover": "/projects/yournextgame/yournextgame.png",
-            "title": "Your Next Game",
-            "description": "React | JavaScript | CSS",
-            "url": "https://yournextgame.netlify.app"
-        },
-                {
-            "cover": "/projects/argencalc/argencalc.png",
-            "title": "ArgenCalc",
-            "description": "React | JavaScript | CSS",
-            "url": "https://argencalc.vercel.app"
-        },
+  "portfolio": [
+    {
+      "cover": "/projects/gamescout-ai/gamescout-ai.png",
+      "title": "GameScout AI",
+      "description": "React | TypeScript | Tailwind CSS",
+      "url": "https://gamescout-ai.vercel.app"
+    },
+    {
+      "cover": "/projects/stillup/stillup.png",
+      "title": "StillUp?",
+      "description": "React | TypeScript | Python",
+      "url": "https://stillup-one.vercel.app"
+    },
         {
-            "cover": "/projects/drinkme/drinkme.png",
-            "title": "DrinkMe",
-            "description": "Electron | JavaScript",
-            "url": "https://github.com/wasivis/DrinkMe"
-        },
-        {
-            "cover": "/projects/pokedex/pokedex.png",
-            "title": "Pokedex",
-            "description": "React | JavaScript | CSS",
-            "url": "https://wasivispokedex.netlify.app"
-        },
-        {
-            "cover": "/projects/interactsystemforgodot/interactsystemforgodot.gif",
-            "title": "2D Interact System for Godot",
-            "description": "GDScript",
-            "url": "https://wasivis.itch.io/simple-2d-interaction-system-for-godot"
-        }
-    ]
+      "cover": "/projects/yournextgame/yournextgame.png",
+      "title": "Your Next Game",
+      "description": "React | JavaScript | CSS",
+      "url": "https://yournextgame.netlify.app"
+    },
+    {
+      "cover": "/projects/argencalc/argencalc.png",
+      "title": "ArgenCalc",
+      "description": "React | JavaScript | CSS",
+      "url": "https://argencalc.vercel.app"
+    },
+    {
+      "cover": "/projects/drinkme/drinkme.png",
+      "title": "DrinkMe",
+      "description": "Electron | JavaScript",
+      "url": "https://github.com/wasivis/DrinkMe"
+    },
+    {
+      "cover": "/projects/pokedex/pokedex.png",
+      "title": "Pokedex",
+      "description": "React | JavaScript | CSS",
+      "url": "https://wasivispokedex.netlify.app"
+    },
+    {
+      "cover": "/projects/interactsystemforgodot/interactsystemforgodot.gif",
+      "title": "2D Interact System for Godot",
+      "description": "GDScript",
+      "url": "https://wasivis.itch.io/simple-2d-interaction-system-for-godot"
+    }
+  ]
 }

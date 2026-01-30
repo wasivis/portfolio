@@ -27,7 +27,7 @@ const About = () => {
               I'm a Full Stack Developer passionate about building web applications that are both functional and visually engaging. My front-end experience includes JavaScript, TypeScript, Tailwind CSS, and React (which powers this site!). On the back-end, I build with Node.js, Python, and MongoDB, often using Next.js to bridge the two.
             </p>
             <p>
-              I'm committed to delivering high-quality projects and constantly expanding my skills (I'm currently diving into videogame development!)
+              I'm committed to delivering high-quality projects and constantly expanding my skills (I'm currently diving into AI integration).
             </p>
             <p>
               Outside of coding, I enjoy videogames, movies, and TTRPGs, which fuel my creativity and expose me to diverse interfaces and mechanics.
