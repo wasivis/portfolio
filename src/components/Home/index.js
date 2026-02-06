@@ -42,7 +42,7 @@ const Home = () => {
                 }
               />
             </h1>
-            <h2>React / Trypescript Specialist</h2>
+            <h2>React / Typescript Specialist</h2>
             <Link to="/contact" className="flat-button">
               CONTACT ME
             </Link>

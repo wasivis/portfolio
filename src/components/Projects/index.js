@@ -69,16 +69,21 @@ const Projects = () => {
                 alt="project"
               />
               <div className="content">
-                <span className="title">
+                <section className="title">
                   {portfolioData.portfolio[currentSlide]
                     ? portfolioData.portfolio[currentSlide].title
                     : ""}
-                </span>
-                <h4 className="description">
+                </section>
+                <section className="description">
                   {portfolioData.portfolio[currentSlide]
                     ? portfolioData.portfolio[currentSlide].description
                     : ""}
-                </h4>
+                </section>
+                <section className="stack">
+                  {portfolioData.portfolio[currentSlide]
+                    ? portfolioData.portfolio[currentSlide].stack
+                    : ""}
+                </section>
                 <button
                   className="btn"
                   onClick={() =>
